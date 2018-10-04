@@ -1,6 +1,12 @@
 function temHabilidade(skills) {
-  return skills.indexOf("Javascript") !== -1;
+  x = skills.indexOf("Javascript");
+	if(x > 0) {
+		return true
+	} else {
+		return false
+	}
 }
 
-var skills = ["Javascript", "ReactJS", "React Native"];
-console.log(temHabilidade(skills));
+var skills = ["ReactJS", "React Native", "Javascript"];
+
+temHabilidade(skills);
